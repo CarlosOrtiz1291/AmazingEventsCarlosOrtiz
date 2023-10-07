@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.page_header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-height: 15vb;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.nav_bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav_bar ul li {
+    margin-right: 20px;
+}
+.nav_bar ul li:last-child {
+    margin-right: 0;
+}
+.nav_bar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.nav_bar a:hover {
+    color: #ff0055;
+    cursor: pointer;
+}
+
+/*Filtro*/
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+}
+/* Checkbox's*/
+.check_boxs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.check_boxs div {
+    display: flex;
+    align-items: center;
+}
+.check_boxs input[type="checkbox"] {
+    margin-right: 5px;
+}
+/* Estilos para la barra de búsqueda */
+.search_bar {
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+}
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 200px;
+}
+#search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#search-button:hover {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor del carrusel */
+#carouselExampleAutoplaying {
+    width:auto;
+    max-width:none; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel en la página */
+}
+/* Estilo para las imágenes dentro del carrusel */
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
+    height: 400px; /* Hace que la altura de las imágenes sea automática */
+}
+/* Estilo para los botones de navegación */
+.carousel-control-prev, .carousel-control-next {
+    width: 350px; /* Ancho de los botones */
+    height: 350px; /* Altura de los botones */
+}
+
+/* Services */
+.services{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#s-books, #s-food, #s-party, #s-cinema{
+    width:300px;
+    height: 200px;
+    padding: 5px;
+}
+.div{
+    align-items: center;
+}
+
+/* Estilo para el formulario */
+.form-page{
+    padding: 40px;
+}
+
+.form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente en la página */
+    padding: 10px; /* Espaciado interior para el formulario */
+    border: 1px solid #ccc; /* Borde para el formulario */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para el formulario */
+}
+
+/* Estilo para las etiquetas del formulario */
+.form-label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para los campos de entrada del formulario */
+.form-control {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 10px; /* Espaciado inferior entre campos de entrada */
+}
+
+.message-form input[type="text"] {
+    max-height: 500px; /* Altura aumentada de la caja de texto del mensaje */
+}
+
+/* Estilo para el botón de envío del formulario */
+.btn-primary {
+    width: 20%; /* Ancho completo para el botón */
+    margin-left: 460px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.page_footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.social_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.social_icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+    cursor: pointer;
+}
