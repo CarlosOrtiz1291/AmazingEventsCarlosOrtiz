@@ -12,54 +12,88 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header class="page_header">
-        <div class="logo">
-            <img src=".\amazing_brand.png" alt="Mi Logo">
-        </div>
-        <nav class="nav_bar"> 
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/past_events.html">Past Events</a></li>
-                <li><a href="/upcoming_events.html">Upcoming Events</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/stats.html">Stats</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="filter">
-        <divc class="check_boxs">
-            <div>
-                <input type="checkbox" id="books" name="books" value="1">
-                <label for="books">Books</label>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src=".\amazing_brand.png" alt="Mi Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/past_events.html">Past Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/upcoming_events.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stats.html">Stats</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <input type="checkbox" id="cinema" name="cinema" value="1">
-                <label for="cinema">Cinema</label>
+        </div>
+    </nav>
+
+    <!-- Filter -->
+    <div class="container">
+        <!-- Sección Filter -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="books">
+                    <label class="form-check-label" for="books">Books</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="costume-party" name="costume-party" value="1">
-                <label for="costume-party">Costume Party</label>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="cinema">
+                    <label class="form-check-label" for="cinema">Cinema</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="food-fair" name="food-fair" value="1">
-                <label for="food-fair">Food Fair</label>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="costume-party">
+                    <label class="form-check-label" for="costume-party">Costume Party</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="marathon" name="marathon" value="1">
-                <label for="marathon">Marathon</label>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="food-fair">
+                    <label class="form-check-label" for="food-fair">Food Fair</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="music-concert" name="music-concert" value="1">
-                <label for="music-concert">Music Concert</label>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="marathon">
+                    <label class="form-check-label" for="marathon">Marathon</label>
+                </div>
             </div>
-            <div class="search_bar">
-                <input type="text" id="search-input" placeholder="LookUp...">
-                <button id="search-button">Search</button>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="music-concert">
+                    <label class="form-check-label" for="music-concert">Music Concert</label>
+                </div>
+            </div>
+            <div class="col-md-12 search-bar">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="LookUp...">
+                    <button class="btn btn-primary" id="search-button">Search</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Carousel -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <h5 class="position-absolute text-white z-1 display-1 fw-bold d-flex justify-content-center w-100 align-items-center h-80 carousel-title">UPCOMING EVENTS</h5>
         <div class="carousel-inner">
@@ -70,7 +104,7 @@
                 <img src="optional_banner_2.jpg" class="img-fluid" alt="Banner-2">
             </div>
             <div class="carousel-item">
-                <img src="optional_banner_3.jpg" class="img-fluid"alt="Banner-3">
+                <img src="optional_banner_3.jpg" class="img-fluid" alt="Banner-3">
             </div>
             <div class="carousel-item">
                 <img src="optional_banner_4.jpg" class="img-fluid" alt="Banner-4">
@@ -88,82 +122,81 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-
-
-
-
-
-
-
-
-    <div class="services">
-        <div>
-            <img id="s-books" src=".\books.jpg" alt="services-books">
-            <h4>Books Sales</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="books-price">USD 50c/u</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-food" src=".\food_fair.jpg" alt="services-food-fair">
-            <h4>Food Fairs</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="food-price">From USD 1000</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-party" src=".\costume_party.jpg" alt="services-costume-party">
-            <h4>Costume Party</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="party-price">From USD 4000</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-cinema" src=".\Cinema.jpg" alt="services-cinema">
-            <h4>Cinema</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="cinema-price">USD 2c/u</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-books" src=".\books.jpg" alt="services-books">
-            <h4>Books Sales</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="books-price">USD 50c/u</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-party" src=".\costume_party.jpg" alt="services-costume-party">
-            <h4>Costume Party</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="party-price">From USD 4000</label>
-            <button id="details">Details</button>
-        </div>
-        <div>
-            <img id="s-food" src=".\food_fair.jpg" alt="services-food-fair">
-            <h4>Food Fairs</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi aut, et neque consequatur hic doloribus rerum debitis aliquid dignissimos autem omnis voluptas temporibus quasi labore? Quo est cum officia?
-            </p>
-            <label for="food-price">From USD 1000</label>
-            <button id="details">Details</button>
+    
+    <!-- Services -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\books.jpg" class="card-img-top" alt="services-books">
+                    <div class="card-body">
+                        <h4 class="card-title">Books Sales</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="books-price">USD 50c/u</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\food_fair.jpg" class="card-img-top" alt="services-food-fair">
+                    <div class="card-body">
+                        <h4 class="card-title">Food Fairs</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="food-price">From USD 1000</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\costume_party.jpg" class="card-img-top" alt="services-costume-party">
+                    <div class="card-body">
+                        <h4 class="card-title">Costume Party</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="party-price">From USD 4000</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\cinema.jpg" class="card-img-top" alt="services-cinema">
+                    <div class="card-body">
+                        <h4 class="card-title">Cinema</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="party-price">USD 5c/u</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\marathon.jpg" class="card-img-top" alt="services-marathon">
+                    <div class="card-body">
+                        <h4 class="card-title">Marathon</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="marathon-price">From USD 1000</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=".\music_concert.jpg" class="card-img-top" alt="services-music-concert">
+                    <div class="card-body">
+                        <h4 class="card-title">Music Concert</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <label for="music-concert-price">USD 5000</label>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <footer class="page_footer">
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <div class="social_icons">
             <div class="facebook">
                 <img src=".\facebook.png" alt="facebook-asevents">
