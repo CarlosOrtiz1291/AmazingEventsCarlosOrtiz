@@ -65,13 +65,13 @@ body {
 .search_bar {
     display: flex;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 #search-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
-    width: 200px;
+    width: 300px;
 }
 #search-button {
     padding: 10px 20px;
@@ -96,19 +96,21 @@ body {
 /* Estilo para las imágenes dentro del carrusel */
 .carousel-inner img {
     width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
-    height: 400px; /* Hace que la altura de las imágenes sea automática */
+    height: 300px; 
 }
 /* Estilo para los botones de navegación */
 .carousel-control-prev, .carousel-control-next {
-    width: 350px; /* Ancho de los botones */
-    height: 350px; /* Altura de los botones */
+    width: 10px; /* Ancho de los botones */
+    height: 300px; /* Altura de los botones */
 }
 
 /* Services */
 .services{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Espacio entre las tarjetas */
+    
+    padding: 30px;
 }
 #s-books, #s-food, #s-party, #s-cinema{
     width:300px;
@@ -153,16 +155,56 @@ body {
     margin-left: 460px;
 }
 
+/* Estilo para la tabla de stats*/
+.table-stats{
+    padding: 40px;
+    margin: 0 auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+/* Estilo para las celdas con colspan */
+tr:nth-child(odd) td[colspan] {
+    background-color: #aaa8a8;
+    border: 1px solid black;
+    font-weight: bold;
+}
 
 
-
-
-
-
-
-
-
-
+/* Estilo para pagina de detalles*/
+.details{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border: solid 1px rgb(73, 73, 73);
+    background-color: gray;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.imagen-servicio{
+    padding: 10px;
+    width: 60%;
+    height: auto;
+}
+.agenda-servicio{
+    background-color: white;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+}
 
 /* Footer */
 .page_footer {
@@ -173,7 +215,7 @@ body {
 }
 .social_icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .social_icons img {
@@ -186,4 +228,38 @@ body {
     transform: scale(1.2);
     opacity: 0.7;
     cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+/* Media query para pantalla con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    .nav_bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .nav_bar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Media query para pantalla con un ancho máximo de 500px */
+@media screen and (max-width: 500px) {
+    .nav_bar ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* Media query para pantalla con un ancho máximo de 365px */
+@media screen and (max-width: 365px) {
+    .nav_bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
 }
