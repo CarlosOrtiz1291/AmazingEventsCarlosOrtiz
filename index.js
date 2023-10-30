@@ -1,5 +1,21 @@
-const arrayDeEventos = data.events;
+import{data} from "./data.js"
+const arrayEvents = data.events
+arrayCategories = Array.from(new Set(arrayEvents.map((event) => event.category.replace(" ", "-"))));
+
 const containerCard = document.getElementById("contenedorIndexCard");
+
+function checks(arrayCategories) {
+    arrayEvents.forEach(event => {
+    const checkbox = document.createElement("div");
+    checkbox.classList.add("form-check", "form-switch");
+    checkbox.innerHTML = `
+    <input class="form-check-input" type="checkbox" role="switch" id=${category} value=${category}>
+    <label class="form-check-label text-light" for=${category}>${category.replace("-", " ")}</label>
+    `;
+    contenedorCheckbox.appendChild(checkbox);
+    });
+}
+
 
 
 for (let event of arrayDeEventos) {
@@ -19,5 +35,3 @@ for (let event of arrayDeEventos) {
         </div>`
     containerCard.appendChild(creadorCards);
 }
-
-

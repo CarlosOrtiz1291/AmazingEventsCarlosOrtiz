@@ -45,53 +45,7 @@
     </nav>
 
     <!-- Filter -->
-    <div class="container">
-        <!-- Sección Filter -->
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="books">
-                    <label class="form-check-label" for="books">Books</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="cinema">
-                    <label class="form-check-label" for="cinema">Cinema</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="costume-party">
-                    <label class="form-check-label" for="costume-party">Costume Party</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="food-fair">
-                    <label class="form-check-label" for="food-fair">Food Fair</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="marathon">
-                    <label class="form-check-label" for="marathon">Marathon</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="music-concert">
-                    <label class="form-check-label" for="music-concert">Music Concert</label>
-                </div>
-            </div>
-            <div class="col-md-12 search-bar">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="search-input" placeholder="LookUp...">
-                    <button class="btn btn-primary" id="search-button">Search</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Carousel -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -123,6 +77,18 @@
         </button>
     </div>
     
+    <main class="d-flex justify-content-center flex-column p-1">
+        <div id="contenedorCheckbox" class="d-flex justify-content-center gap-1 flex-wrap">
+        </div>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form>
+        <div id="contenedorCards" class="d-flex justify-content-center p-1 flex-wrap gap-1">
+        </div>
+    </main>
+
+
     <!-- Services -->
     <div id="contenedorIndexCard" class="d-flex justify-content-around flex-wrap cardaround">
     </div>
@@ -144,8 +110,8 @@
         </div>
     </footer>
 
-    <script src="data.js"></script>
-    <script src="index.js"></script>
+    <!--<script src="data.js"></script>-->
+    <script src="index.html"></script>
     
 </body>
 </html>
