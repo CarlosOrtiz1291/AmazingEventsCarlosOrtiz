@@ -19,7 +19,7 @@ for (const event of arrayDeEventos) {
                     </div>
                 </div>
             </div>`;
-            contenedorComingCard.appendChild(creadorCards);
+        contenedorComingCard.appendChild(creadorCards);
     }
 }
 
